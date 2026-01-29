@@ -17,20 +17,7 @@ tabButtons.forEach((tabButton)=>{
         const dataValue = tabButton.dataset.tabsHandler
         changeContent(tabDescriptions, dataValue)
         changeContent(tabImages, dataValue)
-        // tabDescriptions.forEach((descr)=>{
-        //     if (descr.dataset.tabsField === dataValue){
-        //         descr.classList.toggle('hidden')
-        //     } else {
-        //         descr.classList.toggle('hidden')
-        //     }
-        // })
-        // tabImages.forEach((img, indexDescr)=>{
-        //     if (img.dataset.tabsField === dataValue){
-        //         img.classList.toggle('hidden')
-        //     } else {
-        //         img.classList.toggle('hidden')
-        //     }
-        // })
+
         tabButtons.forEach((btn)=>{
             if(btn === event.target){
                 document.title = btn.textContent;
